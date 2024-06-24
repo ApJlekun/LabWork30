@@ -1,0 +1,25 @@
+﻿<Window x:Class="Task2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <CheckBox x:Name="CheckShowPassword" Content="Показать пароль" Margin="282,222,0,0" VerticalAlignment="Top" 
+                  HorizontalAlignment="Left" Checked="CheckPassword_Checked" Unchecked="CheckPassword_Unchecked" />
+
+        <Button x:Name="AuthorizationButton" Content="Авторизоваться"  Click="AuthorizationButton_Click" 
+                Margin="282,257,0,0" Width="150" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        <Label Content="Логин" Margin="282,144,0,0" Width="52" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Content="Пароль" Margin="282,188,0,0" Width="52" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        <TextBox x:Name="LoginTextBox" Margin="342,142,0,0" Width="150" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="PasswordTextBox" Visibility="Collapsed" Margin="342,186,0,0" Width="150" 
+                 VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <PasswordBox x:Name="PasswordBox" Visibility="Visible" Margin="342,186,0,0" Width="150" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+    </Grid>
+</Window>
